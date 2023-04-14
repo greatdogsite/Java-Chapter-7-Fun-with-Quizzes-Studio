@@ -1,28 +1,28 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public abstract class Question {
-    private String question;
-    private String answer;
+    private ArrayList<String> questions;
+    private ArrayList<String> answers;
+    private String message;
 
-    Question(String aQuestion, String anAnswer) {
-        this.question = aQuestion;
-        this.answer = anAnswer;
+    Question(ArrayList<String> aQuestions, ArrayList<String> anAnswers, String aMessage) {
+        this.questions = aQuestions;
+        this.answers = anAnswers;
+        this.message = aMessage;
     }
 
-    Question(String aQuestion) {
-        this.question = aQuestion;
+    public ArrayList<String> getQuestions() {
+        return questions;
     }
 
-    Question() {
-        //
+    public ArrayList<String> getAnswers() {
+        return answers;
     }
 
-    public String getQuestion() {
-        return this.question;
-    }
-
-    public String getAnswer() {
-        return this.answer;
+    public String getMessage() {
+        return message;
     }
 }
 

@@ -1,23 +1,10 @@
 package org.example;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class MultipleChoice extends Question {
-    private ArrayList<String> arrayQuestions;
-    private String answer;
 
-    MultipleChoice(ArrayList<String> arrayQuestions, String anAnswer) {
-        super();
-        this.arrayQuestions = arrayQuestions;
-        this.answer = anAnswer;
+    MultipleChoice(ArrayList<String> aQuestions, ArrayList<String> anAnswers, String aMessage) {
+        super(aQuestions, anAnswers, aMessage);
     }
-
-    public ArrayList<String> getArrayQuestions() {
-        return this.arrayQuestions;
-    }
-
-    public String getAnswer() {
-        return answer;
-    }
-
 }
